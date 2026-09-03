@@ -83,5 +83,7 @@ jobs:
   information:
     runs-on: ubuntu-latest
     steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
       - name: Display information
         run: ./.github/actions/deploy-s3-javascript
