@@ -85,5 +85,11 @@ jobs:
     steps:
       - name: Check out repository
         uses: actions/checkout@v4
+
+        # New step: Install dependencies for your custom action
+      - name: Install Action Dependencies
+        run: npm install
+        working-directory: ./.github/actions/deploy-s3-javascript
+
       - name: Display information
         uses: ./.github/actions/deploy-s3-javascript
