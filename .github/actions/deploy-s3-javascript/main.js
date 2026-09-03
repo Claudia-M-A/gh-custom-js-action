@@ -3,7 +3,7 @@ const github = require("@actions/github");
 const exec = require("@actions/exec");
 
 function run() {
-  core.notice("Deploying to S3 using JavaScript action");
+  core.notice("Deploying to S3 using JavaScript custom action");
 }
 
 run();
