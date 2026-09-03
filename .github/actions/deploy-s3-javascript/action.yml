@@ -1,5 +1,5 @@
 name: Deploy to AWS S3 using JavaScript
 description: A custom GitHub Action to deploy files to AWS S3 using JavaScript.
 runs:
-  using: "node16"
+  using: "node20"
   main: "main.js"
